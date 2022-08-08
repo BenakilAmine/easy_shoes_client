@@ -1,11 +1,8 @@
 import { useQuery } from '@apollo/client';
 import { Redirect, Route } from 'react-router';
 import { BrowserRouter } from "react-router-dom";
-<<<<<<< HEAD
 import Accueil from './screens/Accueil';
-=======
-import Accueil from './screens/Acceuil';
->>>>>>> dev
+// import Accueil from './screens/Accueil2';
 import DashboardScreen, { GET_PROFILE } from './screens/Dashboard';
 import HomeScreen from './screens/Home';
 import SigninScreen from './screens/Signin';

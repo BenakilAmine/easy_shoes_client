@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import Accueil from "./screens/Acceuil";
+import Accueil from "./screens/Accueil";
 import Layout from "./components/Layout";
 const theme = createTheme({
   palette: {
