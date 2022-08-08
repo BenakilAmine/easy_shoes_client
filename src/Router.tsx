@@ -1,7 +1,11 @@
 import { useQuery } from '@apollo/client';
 import { Redirect, Route } from 'react-router';
 import { BrowserRouter } from "react-router-dom";
+<<<<<<< HEAD
+import Accueil from './screens/Accueil';
+=======
 import Accueil from './screens/Acceuil';
+>>>>>>> dev
 import DashboardScreen, { GET_PROFILE } from './screens/Dashboard';
 import HomeScreen from './screens/Home';
 import SigninScreen from './screens/Signin';
@@ -27,6 +31,9 @@ function Router(): JSX.Element {
             </Route>
             <Route exact path="/home">
                 <HomeScreen></HomeScreen>
+            </Route>
+            <Route exact path="/accueil">
+                <Accueil></Accueil>
             </Route>
         </BrowserRouter>
     );
