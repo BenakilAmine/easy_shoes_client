@@ -56,6 +56,7 @@ function CarouselCustom(): JSX.Element   {
     animation="slide"
     interval={7000}
     swipe={true}
+    className="Carousel-root-1"
     >
       {images.map((item, i) => (
         <div className="innerCarousel">
