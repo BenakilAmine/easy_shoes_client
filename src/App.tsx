@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 import Accueil from "./screens/Acceuil";
 import Layout from "./components/Layout";
+import './styles/global.scss';
 const theme = createTheme({
   palette: {
     primary: {
