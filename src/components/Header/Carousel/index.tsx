@@ -19,7 +19,7 @@ function Item({ item }: { item: { src: string } }) {
   );
 }
 
-function CarouselCustom() {
+function CarouselCustom(): JSX.Element   {
   const { replace } = useHistory();
   const images = [
     {

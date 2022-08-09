@@ -1,5 +1,10 @@
 // import Router from './Router';
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 import Accueil from "./screens/Accueil";
@@ -10,6 +15,7 @@ import HomeScreen from "./screens/Home";
 import SigninScreen from "./screens/Signin";
 import SignupScreen from "./screens/Signup";
 import { useQuery } from "@apollo/client";
+import "./styles/global.scss";
 const theme = createTheme({
   palette: {
     primary: {
@@ -23,31 +29,28 @@ const theme = createTheme({
 
 function App() {
   const { data, loading, error } = useQuery(GET_PROFILE);
-  
+
   return (
     <ThemeProvider theme={theme}>
       <Router>
         <Layout>
-        <Switch>
-          <Route exact path="/">
-            <Accueil />
+          <Switch>
+            <Route exact path="/">
+              <Accueil />
             </Route>
             <Route exact path="/signin">
-                <SigninScreen></SigninScreen>
+              <SigninScreen></SigninScreen>
             </Route>
             <Route exact path="/signup">
-                <SignupScreen></SignupScreen>
+              <SignupScreen></SignupScreen>
             </Route>
             <Route exact path="/dashboard">
-                <DashboardScreen></DashboardScreen>
+              <DashboardScreen></DashboardScreen>
             </Route>
             <Route exact path="/home">
-                <HomeScreen></HomeScreen>
+              <HomeScreen></HomeScreen>
             </Route>
-            <Route exact path="/footer">
-                <Footer></Footer>
-            </Route>
-        </Switch>
+          </Switch>
         </Layout>
       </Router>
     </ThemeProvider>
