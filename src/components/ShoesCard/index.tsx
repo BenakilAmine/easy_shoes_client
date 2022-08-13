@@ -49,13 +49,13 @@ const ShoesCard: FC<Props> = ({ article }): JSX.Element => {
             </Typography>
             <Rating rating={2} />
           </CardContent>
+        </Content>
           <ButtonCustom variant="contained" color="primary">
             <a href="/allproducts">View</a>
           </ButtonCustom>
           <ButtonCustom  color="secondary">
             <a href="/allproducts">Add to cart</a>
           </ButtonCustom>
-        </Content>
       </CardCustom>
     </>
   );

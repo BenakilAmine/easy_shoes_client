@@ -4,9 +4,31 @@ import Button from "@mui/material/Button";
 
 export const CardCustom = styled(Card)`
   background: #fff;
-  width: 30%;
   box-shadow: none;
-  margin: 50px 0;
+  margin: 10px 0;
+  button {
+    display: none;
+  }
+  &:hover {
+    background-color: black;
+    opacity: 0.2;
+    height: 295px;
+    button {
+        display:inline-block;
+        bottom: 160px;
+        margin-left: 10px;
+        color: black;
+        background-color: green;
+        opacity: 1 !important;
+        z-index: 1000;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        z-index: 1000;
+      }      
+    }
+  }
   img {
     width: 100%;
     margin: auto;
@@ -30,26 +52,8 @@ export const CardCustom = styled(Card)`
 export const Content = styled.div`
   width: 250px;
   position: relative;
-  button {
-    display: none;
-  }
-  &:hover {
-    background-color: black;
-    z-index: 100;
-    opacity: 0.2;
-    button {
-        background-color: red;
-        display:inline-block;
-        bottom: 130px;
-        margin-left: 10px;
-        color: white;
-      a {
-        color: white;
-        text-decoration: none;
-        padding: 5px;
-      }      
-    }
-  }
+  padding: 10px 0;
+  
 `;
 export const ButtonCustom = styled(Button)`
 
