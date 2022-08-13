@@ -6,7 +6,6 @@ const Collection = ({ articles,accueil }: {articles :any, accueil:any}) => {
   return (
     <div
         style={{
-            border: "1px solid black",
             textAlign: "center",
         }}
     >
@@ -21,13 +20,16 @@ const Collection = ({ articles,accueil }: {articles :any, accueil:any}) => {
         style={{
             display: "flex",
             justifyContent: "space-evenly",
+            flexWrap: "wrap",
             width: "60%",
             margin: "0 auto",
           }}
       >
+
         {articles.map((article:any) => (
           <ShoesCard key={article.id} article={article} />
         ))}
+
       </div>
     </div>
   );
