@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+}
+
+.informations_filter {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    .showing_number {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}

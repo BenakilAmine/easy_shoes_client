@@ -14,6 +14,7 @@ import SigninScreen from "./screens/Signin";
 import SignupScreen from "./screens/Signup";
 import { useQuery } from "@apollo/client";
 import "./styles/global.scss";
+import AllProducts from "./screens/AllProducts";
 const theme = createTheme({
   palette: {
     primary: {
@@ -34,6 +35,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Accueil />
+            </Route>
+            <Route exact path="/allproducts">
+              <AllProducts></AllProducts>
             </Route>
             <Route exact path="/signin">
               <SigninScreen></SigninScreen>
