@@ -1,4 +1,5 @@
 import React from 'react';
+import Collection from '../components/Collection';
 import CollectionAllProducts from "../components/CollectionAllProducts";
 import { Article } from '../components/ShoesCard';
 
@@ -64,7 +65,8 @@ const data: Article[]= [
 function AllProducts() {
     return (
       <>
-        <CollectionAllProducts articles={data} />
+        {/* <CollectionAllProducts articles={data} /> */}
+        <Collection articles={data} />
       </>
     );
   }

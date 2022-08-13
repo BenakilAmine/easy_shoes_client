@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import ShoesCard, { Article } from "./ShoesCard";
 
-const Collection = ({ articles,accueil }: {articles :any, accueil:any}) => {
-  console.log('accueil',accueil);
+const Collection = ({ articles }: {articles :any}) => {
   return (
     <div
         style={{
@@ -20,6 +19,7 @@ const Collection = ({ articles,accueil }: {articles :any, accueil:any}) => {
       <div
         style={{
             display: "flex",
+            flexWrap: "wrap",
             justifyContent: "space-evenly",
             width: "60%",
             margin: "0 auto",
