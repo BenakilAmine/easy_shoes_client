@@ -65,8 +65,7 @@ const data: Article[]= [
 function AllProducts() {
     return (
       <>
-        {/* <CollectionAllProducts articles={data} /> */}
-        <Collection articles={data} />
+        <CollectionAllProducts articles={data} />
       </>
     );
   }

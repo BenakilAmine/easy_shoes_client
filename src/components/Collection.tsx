@@ -20,7 +20,6 @@ const Collection = ({ articles }: {articles :any}) => {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-evenly",
-            flexWrap: "wrap",
             width: "60%",
             margin: "0 auto",
           }}
