@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import ShoesCard, { Article } from "./ShoesCard";
 
-const Collection = ({ articles,accueil }: {articles :any, accueil:any}) => {
-  console.log('accueil',accueil);
+const Collection = ({ articles }: {articles :any}) => {
+  // console.log('accueil',accueil);
   return (
     <div
         style={{

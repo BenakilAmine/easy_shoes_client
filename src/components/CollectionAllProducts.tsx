@@ -52,6 +52,7 @@ const CollectionAllProducts = ({ articles }: {articles :any}) => {
             display: "flex",
             justifyContent: "space-evenly",
             width: "60%",
+            flexWrap: "wrap",
             margin: "0 auto",
           }}
       >

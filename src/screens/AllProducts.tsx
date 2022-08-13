@@ -1,4 +1,5 @@
 import React from 'react';
+import Collection from '../components/Collection';
 import CollectionAllProducts from "../components/CollectionAllProducts";
 import { Article } from '../components/ShoesCard';
 

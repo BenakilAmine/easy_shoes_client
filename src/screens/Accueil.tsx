@@ -70,7 +70,7 @@ function Accueil() {
   return (
     <>
       <CarouselCustom />
-      <Collection  articles={data} accueil={acc} />
+      <Collection  articles={data}  />
     </>
   );
 }
