@@ -10,12 +10,11 @@ import { Button } from "@material-ui/core";
 import Accueil from "./screens/Accueil";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
-import DashboardScreen, { GET_PROFILE } from "./screens/Dashboard";
-import HomeScreen from "./screens/Home";
 import SigninScreen from "./screens/Signin";
 import SignupScreen from "./screens/Signup";
 import { useQuery } from "@apollo/client";
 import "./styles/global.scss";
+import AllProducts from "./screens/AllProducts";
 const theme = createTheme({
   palette: {
     primary: {
@@ -37,7 +36,6 @@ const theme = createTheme({
 });
 
 function App() {
-  const { data, loading, error } = useQuery(GET_PROFILE);
 
   return (
     <ThemeProvider theme={theme}>
@@ -47,17 +45,14 @@ function App() {
             <Route exact path="/">
               <Accueil />
             </Route>
+            <Route exact path="/allproducts">
+              <AllProducts></AllProducts>
+            </Route>
             <Route exact path="/signin">
               <SigninScreen></SigninScreen>
             </Route>
             <Route exact path="/signup">
               <SignupScreen></SignupScreen>
-            </Route>
-            <Route exact path="/dashboard">
-              <DashboardScreen></DashboardScreen>
-            </Route>
-            <Route exact path="/home">
-              <HomeScreen></HomeScreen>
             </Route>
           </Switch>
         </Layout>
