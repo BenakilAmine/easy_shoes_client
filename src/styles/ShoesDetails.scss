@@ -1,0 +1,39 @@
+.main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        .shoes_name {
+            font-size: xx-large;
+        }
+        p {
+            font-weight: bold;
+        }
+        .rating {
+            padding-top: 20px;
+        }
+    }
+    .price_and_style {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        .price {
+            font-weight: bold;
+            font-size: xx-large;
+            margin-right: 50px;
+        }
+    }
+    .buttons_and_fields {
+        display: flex;
+        align-items: center;
+    }
+    .informations_shipping {
+        margin-top: 30px;
+        font-size: large;
+    }
+}
